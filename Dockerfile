@@ -1,7 +1,7 @@
-FROM node:14-alpine
+FROM alpine:latest
 
 RUN \
-  apk --update add nodejs nodejs-npm python make g++ \
+  apk --update add node node-npm python make g++ \
     curl wget \
       build-base ca-certificates git haproxy socat
 
