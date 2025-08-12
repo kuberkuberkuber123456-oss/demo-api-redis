@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM node:14-alpine
 
 RUN \
   apk --update add nodejs nodejs-npm python make g++ \
